@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "./App.css";
 import { ISegments, ISpinWheelProps, SpinWheel } from '.';
+import logo from "./assets/images/logo.jpg"
 
 function App() {
   const [spinResult, setSpinResult] = useState<string>("");
@@ -41,7 +42,7 @@ function App() {
       <div className='landingpage'>
         <div className='navbar'>
           {/* <a className='navlogo'>LOGO</a> */}
-          <img src='src/assets/images/logo.jpg' className='logo'/>
+          <img src={logo} className='logo'/>
         </div>
         <div className='box'>
           <div className='infobox'>

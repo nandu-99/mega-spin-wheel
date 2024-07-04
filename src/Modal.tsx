@@ -1,5 +1,17 @@
 import React from 'react';
 import './Modal.css'; // Create a CSS file to style the modal
+import soundbox from "./assets/images/soundbar.png"
+import ironbox from "./assets/images/ironbox.jpeg"
+import neckband from "./assets/images/neckband.png"
+import stove from "./assets/images/stove.jpeg"
+import cooker from "./assets/images/cooker.jpeg"
+import idly from "./assets/images/idly.jpeg"
+import washing from "./assets/images/washing.webp"
+import tv from "./assets/images/tv.jpeg"
+import laptop from "./assets/images/laptop.webp"
+import geyser from "./assets/images/geyser.jpeg"
+import watch from "./assets/images/watch.png"
+
 
 interface ModalProps {
   show: boolean;
@@ -8,20 +20,20 @@ interface ModalProps {
 }
 
 const segmentImages: { [key: string]: string[] } = {
-  "50% off on Sound Bar": ["src/assets/images/soundbar.png"],
+  "50% off on Sound Bar": [soundbox],
   "Iron Box/Neck Band FREE on Smart Phone": [
-    "src/assets/images/ironbox.jpeg",
-    "src/assets/images/neckband.png"
+    ironbox,
+    neckband
   ],
-  "2 Burner FREE on Chimney/Refrigerator": ["src/assets/images/stove.jpeg"],
-  "Idly Cooker/Pressure Cooker FREE on Stove": ["src/assets/images/cooker.jpeg", "src/assets/images/idly.jpeg"],
-  "20% OFF on Washing Machine": ["src/assets/images/washing.webp"],
+  "2 Burner FREE on Chimney/Refrigerator": [stove],
+  "Idly Cooker/Pressure Cooker FREE on Stove": [cooker,idly],
+  "20% OFF on Washing Machine": [washing],
   "2000/- OFF on TV/Laptop": [
-    "src/assets/images/tv.jpeg",
-    "src/assets/images/laptop.webp"
+    tv,
+    laptop
   ],
-  "1lt Instant Geyser @1/-": ["src/assets/images/geyser.jpeg"],
-  "Free Watch worth 8000/- @1/-": ["src/assets/images/watch.png"],
+  "1lt Instant Geyser @1/-": [geyser],
+  "Free Watch worth 8000/- @1/-": [watch],
 };
 
 const Modal: React.FC<ModalProps> = ({ show, onClose, text }) => {
