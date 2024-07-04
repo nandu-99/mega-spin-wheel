@@ -8,20 +8,20 @@ interface ModalProps {
 }
 
 const segmentImages: { [key: string]: string[] } = {
-  "50% off on Sound Bar": ["soundbar.png"],
+  "50% off on Sound Bar": ["src/assets/images/soundbar.png"],
   "Iron Box/Neck Band FREE on Smart Phone": [
-    "ironbox.jpeg",
-    "neckband.png"
+    "src/assets/images/ironbox.jpeg",
+    "src/assets/images/neckband.png"
   ],
-  "2 Burner FREE on Chimney/Refrigerator": ["stove.jpeg"],
-  "Idly Cooker/Pressure Cooker FREE on Stove": ["cooker.jpeg", "idly.jpeg"],
-  "20% OFF on Washing Machine": ["washing.webp"],
+  "2 Burner FREE on Chimney/Refrigerator": ["src/assets/images/stove.jpeg"],
+  "Idly Cooker/Pressure Cooker FREE on Stove": ["src/assets/images/cooker.jpeg", "src/assets/images/idly.jpeg"],
+  "20% OFF on Washing Machine": ["src/assets/images/washing.webp"],
   "2000/- OFF on TV/Laptop": [
-    "tv.jpeg",
-    "laptop.webp"
+    "src/assets/images/tv.jpeg",
+    "src/assets/images/laptop.webp"
   ],
-  "1lt Instant Geyser @1/-": ["geyser.jpeg"],
-  "Free Watch worth 8000/- @1/-": ["watch.png"],
+  "1lt Instant Geyser @1/-": ["src/assets/images/geyser.jpeg"],
+  "Free Watch worth 8000/- @1/-": ["src/assets/images/watch.png"],
 };
 
 const Modal: React.FC<ModalProps> = ({ show, onClose, text }) => {

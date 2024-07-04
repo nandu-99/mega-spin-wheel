@@ -41,7 +41,7 @@ function App() {
       <div className='landingpage'>
         <div className='navbar'>
           {/* <a className='navlogo'>LOGO</a> */}
-          <img src='logo.jpg' className='logo'/>
+          <img src='src/assets/images/logo.jpg' className='logo'/>
         </div>
         <div className='box'>
           <div className='infobox'>
