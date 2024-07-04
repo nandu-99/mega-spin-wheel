@@ -2,6 +2,9 @@ import { useState } from 'react';
 import "./App.css";
 import { ISegments, ISpinWheelProps, SpinWheel } from '.';
 import logo from "./assets/images/logo.jpg"
+import image from "./assets/images/image.png"
+
+
 
 function App() {
   const [spinResult, setSpinResult] = useState<string>("");
@@ -52,7 +55,11 @@ function App() {
             <p className='infobox-slimtext'>
               Unlock Special Offers By Spinning the Wheel
             </p>
+            <div className='imagess'>
+            <img src={image} className='image'/>
           </div>
+          </div>
+         
           <div className='spinWheelBox'>
             <SpinWheel {...spinWheelProps} />
           </div>

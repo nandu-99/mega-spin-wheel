@@ -774,3 +774,14 @@ body {
   font-size: 16px;
   text-align: center;
 }
+
+.imagess{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image{
+  height: 120px;
+}
