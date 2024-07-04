@@ -17,7 +17,7 @@ function App() {
   ];
 
   const handleSpinFinish = (value: string) => {
-    console.log('value:', value);
+    console.log(spinResult)
     setSpinResult(value);
   };
 
@@ -59,7 +59,6 @@ function App() {
 
         <div className='address'>
           <p className='infobox-boldtext'>4-343/1, Sarvodaya Nagar Colony, Meerpet, Balapur, Hyderabad-500097. <br></br> <span className='infobox-slimtext'>Sravan Kumar.Ch :9347819251-9347550075</span></p>
-          {/* <p className='infobox-slimtext'>Sravan Kumar.Ch :9347819251-9347550075</p> */}
         </div>
       </div>
   );

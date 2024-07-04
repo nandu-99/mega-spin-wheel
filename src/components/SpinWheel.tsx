@@ -14,15 +14,12 @@ export const SpinWheel: React.FC<ISpinWheelProps> = ({
   downDuration = 600,
   fontFamily = 'Arial',
   arrowLocation = 'center',
-  showTextOnSpin = false,
-  isSpinSound = true
 }: ISpinWheelProps) => {
   // Separate arrays without nullish values
   const segmentTextArray = segments.map((segment) => segment.segmentText).filter(Boolean);
   const segColorArray = segments.map((segment) => segment.segColor).filter(Boolean);
 
   const [isFinished, setFinished] = useState<boolean>(false);
-  const [isStarted, setIsStarted] = useState<boolean>(false);
   const [needleText, setNeedleText] = useState<string>("");
   const [showModal, setShowModal] = useState<boolean>(false);
 
@@ -68,7 +65,6 @@ export const SpinWheel: React.FC<ISpinWheelProps> = ({
   };
 
   const spin = () => {
-    setIsStarted(true);
     if (timerHandle === 0) {
       spinStart = new Date().getTime();
       maxSpeed = Math.PI / segmentTextArray.length;
